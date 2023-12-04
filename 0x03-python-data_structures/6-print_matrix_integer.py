@@ -6,7 +6,7 @@ def print_matrix_integer(matrix=[[]]):
         for rows in range(len(matrix)):
             for col in range(len(matrix[rows])):
                 if col != len(matrix[rows]) - 1:
-                    space= ' '
+                    space = ' '
                 else:
                     space = ''
                 print("{}".format(matrix[rows][col]), end=space)
