@@ -2,9 +2,9 @@
 def safe_print_integer(value):
     """
         Prints an integer {:d}.format
-        
+
         Args:
-            (value)an integer 
+            (value)an integer
 
         Return:
             If TypeError or ValueError - False
