@@ -2,7 +2,7 @@
 def safe_print_list_integers(my_list=[], x=0):
     """
         Print x elements in a list that are integers
-        
+
         Args:
         my_kist[]: Contains list of vales to check
         x: value to be printed
