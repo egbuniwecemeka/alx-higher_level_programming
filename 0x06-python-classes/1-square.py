@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Square class based on private instance attribute """
 
+
 class Square:
     """Square clas """
 
@@ -12,5 +13,3 @@ class Square:
         """
 
         self._size = size
-
-
