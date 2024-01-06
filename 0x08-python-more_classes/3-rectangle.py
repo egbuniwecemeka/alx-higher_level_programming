@@ -1,9 +1,9 @@
 #!usr/bin/python3
-""" Rectangle definition """
+""" Defines a srectangle """
 
 
-Rectangle = __import__('3-rectangle').Rectangle
-"""Represents a Rectangle """
+class Rectangle:
+    """ Represents a Rectangle """
 
     def __init__(self, width=0, height=0):
         """ Initializing Rectangle
@@ -27,7 +27,7 @@ Rectangle = __import__('3-rectangle').Rectangle
         if value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-    
+
     @property
     def height(self):
         """ Gets or sets the height of a rectangle """
@@ -65,4 +65,3 @@ Rectangle = __import__('3-rectangle').Rectangle
             if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
-

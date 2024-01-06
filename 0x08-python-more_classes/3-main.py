@@ -1,10 +1,15 @@
 #!/usr/bin/python3
-copy_list = __import__('3-copy_list').copy_list
+Rectangle = __import__('3-rectangle').Rectangle
 
-my_list = [1, 2, 3]
-print(my_list)
+my_rectangle = Rectangle(2, 4)
+print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
 
-new_list = copy_list(my_list)
+print(str(my_rectangle))
+print(repr(my_rectangle))
 
-print(new_list)
-print(my_list)
+print("--")
+
+my_rectangle.width = 10
+my_rectangle.height = 3
+print(my_rectangle)
+print(repr(my_rectangle))
