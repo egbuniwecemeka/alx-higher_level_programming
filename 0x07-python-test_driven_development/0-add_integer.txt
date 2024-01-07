@@ -1,0 +1,29 @@
+0-add_integer.txt
+-----------------
+-----------------
+
+Documentation for add_integer function
+--------------------------------------
+--------------------------------------
+
+This module defines a function `add_interger(a, b=98)` that performs addition of two integers
+
+Function Signature
+------------------
+```python
+def add_integer(a, b=98):
+	""" 
+	Adds two integers.
+
+	Parameters:
+	- a (int or float): The first integer or float
+	- b (int or float): The second integer or float, default val is 98
+
+	Returns:
+	int: The sum of the two integers after type casting to int
+	
+	Raises:
+	- TypeError: If either a or b is not an int or float
+	"""
+	
+	#Function Implementation
