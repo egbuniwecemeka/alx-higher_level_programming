@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """ Defines a class that inherits from a list """
 
+
 class MyList(list):
     """ Class printing in sorted order from a list """
 
