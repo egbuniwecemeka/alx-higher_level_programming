@@ -3,13 +3,8 @@
 
 
 class BaseGeometry:
-    """ Integer class validation definition
+    """ Integer class validation definition """
 
-    method:
-    def area - raises error message
-    def integer - validates value
-
-    """
     def area(self):
         """ Non - functional method """
         raise Exception("area() is not implemented")
