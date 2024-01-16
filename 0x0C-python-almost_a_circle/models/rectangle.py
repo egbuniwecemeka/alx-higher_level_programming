@@ -7,7 +7,7 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
 
-        """ 
+        """
             Initialize a new Rectangle
 
             Attributes:
@@ -33,7 +33,7 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, value):
-        if type(value) !=  int:
+        if type(value) != int:
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
@@ -58,8 +58,8 @@ class Rectangle(Base):
         return self.__x
 
     @x.setter
-    def x(self,value):
-        if type(x)!= int:
+    def x(self, value):
+        if type(x) != int:
             raise TypeError("x must be an integer")
         if x < 0:
             raise ValueError("x must be >= 0")
@@ -96,7 +96,7 @@ class Rectangle(Base):
         """ Updates the rectangle
 
         Args:
-            
+
             *args(int): Attributes count list
                 1st attr: id
                 2nd attr: width
@@ -105,7 +105,7 @@ class Rectangle(Base):
                 5th attr: y cord
 
             **kwargs(dict): key/value attributes pairs
- 
+
         """
         if args and len(args) != 0:
             a = 0
@@ -141,4 +141,8 @@ class Rectangle(Base):
                 elif k == "y":
                     self.y = v
 
-
+    def __str__(self):
+        """ Represents the print() and str(0 representation of a rectangle """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
+                                                       self.y, self.width,
+                                                       self.height)
