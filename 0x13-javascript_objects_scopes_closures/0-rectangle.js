@@ -5,3 +5,5 @@ const Rectangle = class {
         this.width = width;
     }
 };
+
+module.exports = Rectangle
