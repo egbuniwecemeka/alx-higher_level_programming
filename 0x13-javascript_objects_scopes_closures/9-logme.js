@@ -1,6 +1,6 @@
 #!/usr/bin/node
+let ncount = 0;
 exports.logMe = function (item) {
-  let ncount = 0;
   console.log(ncount + ': ' + item);
   ncount++;
 };
