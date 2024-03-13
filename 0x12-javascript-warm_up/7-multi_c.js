@@ -6,7 +6,7 @@ if (isNaN(argv[2]) || argv[2] === undefined) {
   const x = Number(argv[2]);
   let i = 0;
   while (i < x) {
-    console.log('C is fun')
+    console.log('C is fun');
     i++;
   }
 }
