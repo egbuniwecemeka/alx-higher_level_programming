@@ -7,5 +7,6 @@ if (isNaN(argv[2]) || argv[2] === undefined) {
   let i = 0;
   while (i < x) {
     console.log('C is fun')
+    i++;
   }
 }
