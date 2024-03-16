@@ -8,7 +8,7 @@ if __name__ = "__main__":
                            passwd=sys.argv[2], db=sys.argv[3], charset="utf8")
     cur = conn.cursor()
     rows = cur.execute("SELECT * FROM states")
-    row.fetchall()
+    rows.fetchall()
     for row in rows:
         print(row)
 
