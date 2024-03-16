@@ -45,11 +45,14 @@ If (2, 1, 0, 'final', 0) then, successful
 Install SQLAlchemy module version 1.4.x
 
 * sudo pip3 install SQLAlchemy
+
 ... check if properly installed by using 'python3' to go into interactive mode
 
->>> python3
->>> import sqlalchemy
->>> sqlalchemy.__version___
+- python3
+
+(-) import sqlalchemy
+
+(-) sqlalchemy.__version___
 
 **Note: The last basic point to use MySQLdb is to place 'import MYSQLdb' at the top of your script.**
 
