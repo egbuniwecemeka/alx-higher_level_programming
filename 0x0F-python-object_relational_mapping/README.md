@@ -1,6 +1,7 @@
 # 0x0F. Python - Object-relational mapping
 
-* Object -relational Mappers(ORMS)
+## Object -relational Mappers(ORMS)
+
 code library used to automate the automtic transfer of relational databases to object more commonly used in application codes. ORMs represent a bridge between the tables, relationships and fields of relational databases and Python objects.
 
 Usefulness of ORMs
@@ -51,3 +52,12 @@ Install SQLAlchemy module version 1.4.x
 >>> sqlalchemy.__version___
 
 **Note: The last basic point to use MySQLdb is to place 'import MYSQLdb' at the top of your script.**
+
+## Connecting to a MySQL database
+
+The next step in using MySQL in Python Scripts involves connecting to the database you wish to use. All Python DB-API 2.0 modules implement a function 'module_name.connect'. This is the function that is used to connect to the database, in our case MySQL.
+
+db = MySQLdb.connect(host=MY_HOST, user=MY_USER, passwd=MY_PASSWORD, db=MY_DB)
+eg
+conn = MySQL.connect(host="localhost", port=3306, user="root", passwd="****", db=my_db", char="utf8")
+
