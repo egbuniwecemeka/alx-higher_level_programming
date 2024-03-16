@@ -16,10 +16,18 @@ Introduction to MySQL python
 MySQL Python is the MySQL driver for the python language. It is made up of the _mysql wrapper and DB-API 2.0 module MySQLdb. As devs importing MySQL into Python Scripts the DB-API 2.0 is what we are concerned with. The MySQLdb conforms to standards set by Python PEP 249. The first step to use MySQLdb is to install it.
 
 * Steps
+Install and activate venv
 Firstly, i created the python virtual environment and installed venv:
 
 * sudo apt-get install python3.8-venv
 
 * python3 -m venv venv
 
+* source venv/bin/activate
 
+
+Install MySQLdb module version 2.0.x
+
+* sudo apt-get install python3-dev
+
+* 
