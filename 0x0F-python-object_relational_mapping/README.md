@@ -17,6 +17,7 @@ MySQL Python is the MySQL driver for the python language. It is made up of the _
 
 * Steps
 Install and activate venv
+
 Firstly, i created the python virtual environment and installed venv:
 
 * sudo apt-get install python3.8-venv
@@ -25,9 +26,28 @@ Firstly, i created the python virtual environment and installed venv:
 
 * source venv/bin/activate
 
-
 Install MySQLdb module version 2.0.x
 
 * sudo apt-get install python3-dev
 
-* 
+* sudo apt-get install libmysqlclient-dev
+
+* sudo apt-get install zlib1g-dev
+
+* sudo pip3 install mysqlclient
+... check if properly installed by using 'python3' to go into interactive mode
+
+>>> python3
+>>> import MySQLdb
+>>> MySQLdb.version_info
+If (2, 1, 0, 'final', 0) then, successful
+Install SQLAlchemy module version 1.4.x
+
+* sudo pip3 install SQLAlchemy
+... check if properly installed by using 'python3' to go into interactive mode
+
+>>> python3
+>>> import sqlalchemy
+>>> sqlalchemy.__version___
+
+**Note: The last basic point to use MySQLdb is to place 'import MYSQLdb' at the top of your script.**
