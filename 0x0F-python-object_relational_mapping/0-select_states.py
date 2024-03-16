@@ -1,20 +1,24 @@
 #!/usr/bin/python3
 
 import MySQLdb
-import argparse
+import sys
 
-argparser = argparse.ArgumentParser()
-argv.add_argument("username" , help="mysql username")
-argv = argparser.parse.args()
+if len(sys.arg) >= 2:
+    username = arg[1]
+    password = arg[2]
+    database = arg[3]
 
+try:
+    conn = MySQLdb.connect(host="localhost", port=3306, user="root", passwd="root", db="my_db", charset="utf8")
+    cur = conn.cursor()
 
-conn = MySQLdb.connect(host="localhost", port=3306, user="root", passwd="root", db="my_db", charset="utf8")
+    rows = cur.execute("SELECT * FROM states ORDER BY id ASC")
+    for row in rows:
+        print(row)
 
-cur = conn.cursor()
+    cur.close()
+    conn.close()
+except MySQLdb.Error, e:
+    print("{}: {}".format(argv[0], argv[1]))
+    sys.exit(1)
 
-rows = cur.execute("SELECT * FROM states ORDER BY id ASC")
-for row in rows:
-    print("(%d, %s)" % (row[0], row[1]))
-
-cur.close()
-conn.close()
