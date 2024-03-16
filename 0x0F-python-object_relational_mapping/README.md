@@ -61,3 +61,6 @@ db = MySQLdb.connect(host=MY_HOST, user=MY_USER, passwd=MY_PASSWORD, db=MY_DB)
 eg
 conn = MySQL.connect(host="localhost", port=3306, user="root", passwd="****", db=my_db", char="utf8")
 
+This function passes the parameters to the Python extension _mysql.  This lets you pass many of the MySQL specific connection parameters through the normal connection method.
+
+## Getting a cursor
