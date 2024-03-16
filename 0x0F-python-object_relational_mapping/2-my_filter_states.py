@@ -10,7 +10,7 @@ if __name__ == "__main__":
                          passwd=sys.argv[2], db=sys.argv[3], port=3306)
     cur = db.cursor()
     cur.execute("""SELECT * FROM states
-                 WHERE LIKE BINARY name=%s
+                 WHERE name LIKE BINARY '{}'
                  ORDER BY id ASC""", (sys.argv[4]))
     rows = cur.fetchall()
     for row in rows:
