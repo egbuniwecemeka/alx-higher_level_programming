@@ -4,7 +4,7 @@ import MySQLdb
 import sys
 
 if len(sys.argv) >= 4:
-    username = sys.rgv[1]
+    username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
 
