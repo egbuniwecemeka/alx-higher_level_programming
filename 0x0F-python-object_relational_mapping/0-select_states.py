@@ -11,6 +11,5 @@ if __name__ = "__main__":
     rows = curQ.fetchall()
     for row in rows:
         print(row)
-
-cur.close()
-conn.close()
+    cur.close()
+    conn.close()
