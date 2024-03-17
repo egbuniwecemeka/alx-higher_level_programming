@@ -10,7 +10,7 @@ if __name__ == "__main__":
     cur = db.cursor()
     query = """SELECT cities.name FROM %s
                ORDER BY id ASC """
-    cur.execute(query)
+    cur.execute(query, (sys.argv[4],))
     rows = cur.fetchall()
     for row in rows:
         print(row)
