@@ -15,8 +15,3 @@ class State(Base):
 
     id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
-
-
-engine = create_engine('mysql://root:Cemeka1995.@localhost:3306/\
-                       hbtn_0e_0_usa', echo=True)
-Base.metadata.create_all(engine)
