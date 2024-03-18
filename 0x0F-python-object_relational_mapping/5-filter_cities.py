@@ -14,7 +14,7 @@ if __name__ == "__main__":
                ORDER BY id ASC"""
     cur.execute(query, (sys.argv[4],))
     rows = cur.fetchall()
-    for row in rows:
-        print(row)
+    temp = list(row[0] for row in rows)
+    print(*temp, sep=', ')
     cur.close()
     db.close()
