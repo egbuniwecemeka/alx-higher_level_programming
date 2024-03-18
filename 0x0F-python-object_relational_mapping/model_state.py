@@ -2,12 +2,11 @@
 """ A class definition of a State"""
 
 
-from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, MetaData
 
-engine = create_engine('sqlite:///:memory:', echo='True')
-Base = declarative_base()
+metadata_states = MetaData()
+Base = declarative_base(metadata=metadata_states)
 
 
 class State(Base):
