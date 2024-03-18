@@ -10,7 +10,9 @@ Base = declarative_base(metadata=metadata_states)
 
 
 class State(Base):
+    """ id and name attribute for each state """
     __tablename__ = 'states'
 
-    id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
+    id = Column(Integer, unique=True, primary_key=True,
+                autoincrement=True, nullable=False)
     name = Column(String(128), nullable=False)
