@@ -2,7 +2,7 @@
 """ prints the first State object from the database hbtn_0e_6_usa """
 
 import sys
-from sqlalchemy import Base, State
+from base_model import Base, State
 from sqlalchemy import create_engine
 from sqlalchemy import sessionmaker
 
