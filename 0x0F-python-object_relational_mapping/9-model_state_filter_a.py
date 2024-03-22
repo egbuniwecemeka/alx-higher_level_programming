@@ -14,4 +14,4 @@ if __name__ = "__main__":
     session = Session()
     instance = session.query(State).filter(State.name.like('%a%'))
     for i in instance:
-        print(instance.id, instance.name, sep=': ')
+        print(i.id, i.name, sep=': ')
