@@ -17,4 +17,3 @@ if __name__ == "__main__":
         return
     else:
         print(instance.id, instance.name, sep=": ")
-
