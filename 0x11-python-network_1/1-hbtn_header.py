@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    Python scripts that sends a request to an URL and retrieves Header X-Request-Id value 
+    Script sends a request to an URL & retrieves Header X-Request-Id value
 
 """
 
