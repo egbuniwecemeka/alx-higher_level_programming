@@ -3,12 +3,12 @@
 # and displays the size of the body of the response
 # Display size in bytes
 
-if [ $# -ne 0 ]; then
+if [ $# -ne 1 ]; then
 	echo "Useage: $0 <URL>"
 fi
 
 url=$1
 
-response=$(curl -sI "$url" | awk '/Content-Length/ {print $2}')
+body_size=$(curl -s "$1" | wc -c)
 
-echo "$response" | tr -d '\r' 
+echo "$body_size" 
