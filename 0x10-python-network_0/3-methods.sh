@@ -1,3 +1,3 @@
 #!/bin/bash
-# A bash script that list the HTTP Methods supported by a browser
-curl -s -i -X OPTIONS "$1" | awk '/Allow:/ {print "Supported HTTP Methods:", $2}'
+# A bash script that list the HTTP Methods supported by a protocol
+curl -sI "$1" | grep "Allow" | cut -d' ' -f2-
