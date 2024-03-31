@@ -1,3 +1,3 @@
 #!/bin/bash
 # A bash script that list the HTTP Methods supported by a browser
-curl -sIX OPTIONS "$1"
+curl -sI -X OPTIONS "$1"
