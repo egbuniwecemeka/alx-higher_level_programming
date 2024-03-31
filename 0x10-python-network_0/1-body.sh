@@ -1,3 +1,3 @@
 #!/bin/bash
 # A bash script that takes in a URL, sends a request to that URL,
-curl -sL "$1" | echo -n "Route 2"
+echo -n $(curl -sL "$1")
