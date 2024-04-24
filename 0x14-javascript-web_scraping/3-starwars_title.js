@@ -6,7 +6,7 @@ const request = require('request');
 
 const episodeNo = process.argv[2];
 
-const baseUrl = 'https://swapi-api.alx-tools.com/api/${episodeNo}';
+const baseUrl = `https://swapi-api.alx-tools.com/api/${episodeNo}`;
 
 request.get(baseUrl, (err, response, body) => {
   if (err) {
@@ -14,5 +14,4 @@ request.get(baseUrl, (err, response, body) => {
   }
   const movieData = JSON.parse(body);
   console.log(movieData.title);
-})
-
+});
