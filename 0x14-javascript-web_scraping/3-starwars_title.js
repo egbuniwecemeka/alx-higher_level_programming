@@ -12,6 +12,6 @@ request(baseUrl, (err, response, body) => {
   if (err) {
     console.error(err);
   }
-  const movieData = JSON.parse(body);
-  console.log(movieData.title);
+  const movieData = JSON.parse(body).title;
+  console.log(movieData);
 });
