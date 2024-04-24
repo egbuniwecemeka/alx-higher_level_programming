@@ -11,8 +11,8 @@ request(url, (err, response, body) => {
   if (err) {
     console.error(err);
   }
-  //
-  const result = JSON.parse(body).result;
+  // Parse JSON data extracting result array
+  const result = JSON.parse(body).results;
   // use reduce to iterate over movies in result array
   console.log(result.reduce((count, movie) => {
     return movie.characters.find((character) => character.endsWith('/18/'))
