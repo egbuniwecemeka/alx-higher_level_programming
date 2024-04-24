@@ -8,7 +8,7 @@ const episodeNo = process.argv[2];
 
 const baseUrl = `https://swapi-api.alx-tools.com/api/${episodeNo}`;
 
-request.get(baseUrl, (err, response, body) => {
+request(baseUrl, (err, response, body) => {
   if (err) {
     console.error(err);
   }
