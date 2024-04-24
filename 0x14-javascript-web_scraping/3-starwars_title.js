@@ -6,7 +6,7 @@ const request = require('request');
 
 const episodeNo = process.argv[2];
 
-const baseUrl = `https://swapi-api.alx-tools.com/api/${episodeNo}`;
+const baseUrl = `https://swapi-api.alx-tools.com/api/films/${episodeNo}`;
 
 request(baseUrl, (err, response, body) => {
   if (err) {
