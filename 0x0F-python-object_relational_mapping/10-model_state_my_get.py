@@ -15,7 +15,8 @@ if __name__ == "__main__":
     database = argv[3]
     state_name = argv[4]
 
-    engine = create_engine(f'mysql+mysqldb://{username}:{password}@localhost:3306/{database}')
+    engine = create_engine(
+            f'mysql+mysqldb://{username}:{password}@localhost:3306/{database}')
 
     Base.metadata.create_all(engine)
 
@@ -23,7 +24,7 @@ if __name__ == "__main__":
 
     session = Session()
 
-    results = session.query(State).filter_by(name=state_name).one()
+    results = session.query(State).filter_by(name=state_name).first()
     if results:
         print(f"{results.id}")
     else:
