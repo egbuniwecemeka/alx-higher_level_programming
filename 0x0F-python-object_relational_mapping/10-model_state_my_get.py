@@ -24,7 +24,7 @@ if __name__ == "__main__":
     session = Session()
 
     results = session.query(State).filter_by(name=state_name).one()
-    if result:
+    if results:
         print(f"{results.id}")
     else:
         print('Not found')
