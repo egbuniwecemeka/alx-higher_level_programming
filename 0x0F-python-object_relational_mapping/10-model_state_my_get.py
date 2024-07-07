@@ -25,4 +25,7 @@ if __name__ == "__main__":
 
     results = session.query(State).filter_by(name=state_name).all()
     for result in results:
-        print(f"{result.id}")
+        if result:
+            print(f"{result.id}")
+        else:
+            print('Not found')
