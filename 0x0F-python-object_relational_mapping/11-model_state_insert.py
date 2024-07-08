@@ -32,6 +32,4 @@ if __name__ == "__main__":
     session.add(new_state)
 
     results = session.query(State).all()
-
-    for result in results:
-        print(f"{result.id}: {result.name}")
+    print(f"{results.id}")
