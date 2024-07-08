@@ -31,5 +31,5 @@ if __name__ == "__main__":
     new_state = State(name='Louisiana')
     session.add(new_state)
 
-    results = session.query(State).first()
+    results = session.query(State).filter_by(name=new_state)first()
     print(f"{results.id}")
