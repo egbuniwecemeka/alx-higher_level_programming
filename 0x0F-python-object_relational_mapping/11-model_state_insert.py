@@ -28,8 +28,9 @@ if __name__ == "__main__":
     session = Session()
 
     # Add a new state
-    new_state = State(name='Louisiana')
+    add_state = 'Louisiana'
+    new_state = State(name=add_state)
     session.add(new_state)
 
-    results = session.query(State).filter_by(name=new_state)first()
+    results = session.query(State).filter_by(name=add_state)first()
     print(f"{results.id}")
