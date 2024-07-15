@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
-    A Bash script that sends a request to an URL & retrieves Header X-Request-Id value
-
+    A Bash script that sends a request to an
+    URL & retrieves Header X-Request-Id value
 """
 
 import sys
