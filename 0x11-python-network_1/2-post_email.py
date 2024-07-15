@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" 
+"""
     A python script that takes a URl and email as arguments,
     passing the email are aprameter to the URL
 """
