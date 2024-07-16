@@ -5,7 +5,7 @@
     Displays the body of the URL in utf-8
 """
 
-from urllib.request import Request, urlopen
+import urllib.request
 import sys
 
 if __name__ == "__main__":
