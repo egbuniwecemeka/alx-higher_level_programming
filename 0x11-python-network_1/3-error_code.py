@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+""" 
+    Python script taking a CML argument (URL) sends a request to the URL
+    Displays the body of the URL in utf-8
+"""
+
 from urllib.request import Request, urlopen
 import sys
 
