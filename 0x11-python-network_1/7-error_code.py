@@ -1,5 +1,9 @@
 #!/usr/bin/python3
 
+""" 
+    A python script taking a URL, handles HTTP error through the status code
+"""
+
 import requests
 import sys
 
