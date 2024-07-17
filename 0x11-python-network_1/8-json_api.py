@@ -16,12 +16,12 @@ if __name__ == "__main__":
 
     url = 'http://0.0.0.0:5000/search_user'
 
-    response = requests.post(url, data={'letter': q})
+    response = requests.post(url, data={'q': q})
 
     try:
         """ Parse response to JSON """
         json = response.json()
-        if result:
+        if json:
             print(f'[{json.get('id')}] {json.get('name')}')
         else:
             print('No result')
