@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" 
+"""
     A python script that takes a letter as argument,
     sends a POST request to a URL
 """
