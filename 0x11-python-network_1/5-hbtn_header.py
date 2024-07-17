@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+""" A python script that retrieves a specific header from a response """
+
 import requests
 import sys
 
