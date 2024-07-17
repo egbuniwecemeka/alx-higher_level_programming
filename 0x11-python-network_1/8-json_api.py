@@ -22,7 +22,7 @@ if __name__ == "__main__":
         """ Parse response to JSON """
         json = response.json()
         if json:
-            print(f'[{json.get('id')}] {json.get('name')}')
+            print(f"[{json.get('id')}] {json.get('name')}")
         else:
             print('No result')
     except ValueError:
